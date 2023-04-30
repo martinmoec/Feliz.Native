@@ -103,13 +103,17 @@ module Dimensions =
 module Keyboard =
     type IKeyboard = 
         abstract ``dismiss`` : unit -> unit
+        abstract ``isVisible`` : unit -> bool
 
     let Keyboard : IKeyboard = import "Keyboard" "react-native"
 
 module Linking =
 
     type ILinking =
+        abstract member ``canOpenURL`` : string -> JS.Promise<bool>
+        abstract member ``getInitialURL`` : unit -> JS.Promise<string option>
         abstract member ``openSettings`` : unit -> unit
+        abstract member ``openURL``<'a> : string -> JS.Promise<'a>
 
     let Linking : ILinking = import "Linking" "react-native"
 

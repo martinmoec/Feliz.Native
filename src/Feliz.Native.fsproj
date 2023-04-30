@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Feliz.Native</PackageId>
-    <Version>0.0.1-alpha</Version>
+    <Version>0.0.2-alpha</Version>
     <PackageTags>Feliz;Fable;react-native;Fsharp;FSharp Feliz ReactNative;</PackageTags>
     <Description>Feliz/Fable bindings for React Native</Description>
     <PackageProjectUrl>https://github.com/martinmoec/Feliz.Native</PackageProjectUrl>
