@@ -254,6 +254,7 @@ type text =
     static member inline selectable (x:bool) = unbox ("selectable", x)
     static member inline testID (x:string) = unbox ("testID", x)
     static member inline text (x:string) = unbox ("children", unbox (x))
+    static member inline text (x:int) = unbox ("children", unbox(string x))
     static member inline userSelect (x:string) = unbox ("userSelect", x)
 
 type textInput =
